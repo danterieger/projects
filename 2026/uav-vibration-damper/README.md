@@ -1,6 +1,6 @@
 # Vibration Suppression of UAVs: Lattice-Based Motor Damper
 
-**Capstone project** · MEC 825 Mechanical Design · Toronto Metropolitan University · Winter 2026 (January to April)
+**Capstone project** · MEC 825 Mechanical Design · Toronto Metropolitan University · Winter 2026 (January to April)<br>
 **Team:** Zakhar Proskurkin (lead), Sandro Ibrakovic, Dante Rieger, Anuq Haizan Nalawangsa · **Supervisor:** Prof. Bill Lin
 
 ![Exploded view: propeller, motor, lattice damper (green) and UAV arm](images/exploded-assembly.png)

@@ -7,6 +7,7 @@ My engineering and personal projects, organized by year.
 | 2026 | [2026](2026) |
 | 2025 | [2025](2025) |
 | 2024 | [2024](2024) |
+| 2023 | [2023](2023) |
 
 ## How it is organized
 

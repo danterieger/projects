@@ -73,7 +73,7 @@ Being upfront about what this project did and didn't prove:
 
 ## Full design files
 
-The full nTop files, CAD and high-resolution STL models (about 170–300 MB each) are too large for GitHub and are kept in the team's project drive. They're available on request: [connect on LinkedIn](https://www.linkedin.com/in/dante-rieger-8823922aa/) or email dante.rieger@gmail.com.
+The full nTop files, CAD and high-resolution STL models (about 170–300 MB each) are too large for GitHub and are kept in the team's project drive. They're available on request: see the [case study on my website](https://danterieger.github.io/projects/uav-vibration-damper.html), [connect on LinkedIn](https://www.linkedin.com/in/dante-rieger-8823922aa/) or email dante.rieger@gmail.com.
 
 ## Acknowledgements
 

@@ -31,6 +31,30 @@ Turn our Phase 1 control logic into a working hardware prototype: a low-cost cur
 
 ![Curtain function drawing](images/slider-crank-drawing.png)
 
+## Simulation first: Tinkercad
+
+Before building hardware, we built and tested the whole control system in a Tinkercad circuit simulation: Arduino Uno, photoresistor, micro servo, two push buttons, an IR receiver and remote, and a 16×2 LCD showing the current mode.
+
+![Tinkercad circuit: Arduino Uno wired to a breadboard with photoresistor, two push buttons, potentiometer, IR receiver, micro servo and a 16x2 LCD, plus an IR remote](images/tinkercad-circuit.png)
+
+| Signal | Pin |
+|---|---|
+| Photoresistor (light level) | A0 |
+| Servo | D9 |
+| Open / close buttons | D2 / D12 (internal pull-ups) |
+| IR receiver | D7 |
+| LCD (RS, E, D4 to D7) | D4, D5, D6, D8, D10, D11 |
+
+What the simulation version does:
+
+- **Automatic:** opens above 700 and closes below 300; in between it holds its state, so light hovering near one level can't make the curtain flutter.
+- **Manual:** open and close buttons.
+- **Wireless:** a real IR remote and receiver. Remote buttons map to open, close, toggle and a noise test.
+- **Noise test:** typing `NOISE` in the Serial Monitor (or the remote) adds ±50 of random noise to the light reading, to check the thresholds stay stable with a jittery sensor.
+- **Serial commands** `AUTO`, `MANUAL` and `WIRELESS` switch modes, and the LCD shows the mode and noise status.
+
+The hardware prototype then added a half-open position, smooth servo motion and a dedicated mode button.
+
 ## Electronics
 
 - Photoresistor voltage divider on A0 (0 to 1023), the only analog signal
@@ -55,6 +79,15 @@ The servo moves 2° at a time with a 15 ms pause, so the curtain glides instead 
 ## Build
 
 Cardboard frame and links, a popsicle-stick rod, zip-tie curtain rings, and a front panel that hides the mechanism.
+
+## Code
+
+| File | What it is |
+|---|---|
+| [`code/simulation/smart_curtain_sim.ino`](code/simulation/smart_curtain_sim.ino) | Tinkercad simulation: open/closed with hysteresis, IR remote, LCD, noise test |
+| [`code/hardware/smart_curtain.ino`](code/hardware/smart_curtain.ino) | Hardware prototype: open, half and closed positions, smooth servo motion, mode button, serial commands |
+
+Both run on an Arduino Uno. The simulation sketch needs the `IRremote` and `LiquidCrystal` libraries; the hardware sketch only needs `Servo`.
 
 ## Results and what we'd change
 

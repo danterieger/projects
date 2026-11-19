@@ -5,6 +5,7 @@ My engineering projects, organized by year. Designed case studies are on my webs
 | Year | Projects |
 |---|---|
 | [2026](2026) | [Lattice damper for UAV motors](2026/uav-vibration-damper) (capstone) |
+| [2025](2025) | [Smart curtain: light-controlled window automation](2025/smart-curtain) |
 | [2023](2023) | [Dynamic Rescuer: all-terrain patient carrier](2023/dynamic-rescuer) |
 
 ## How it is organized

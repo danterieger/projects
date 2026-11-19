@@ -93,7 +93,7 @@ Both run on an Arduino Uno. The simulation sketch needs the `IRremote` and `Liqu
 
 The curtain moved smoothly between all three positions and followed the light thresholds and user inputs in testing.
 
-- Remote control was simulated with a button and serial commands; a real IR receiver and remote come next
+- On the hardware, remote control was stood in for by a button and serial commands; the IR receiver code already works in the Tinkercad version and can be carried over
 - 3D-printed links and frame instead of cardboard
 - Tune the 300 / 500 / 700 thresholds against real window light
 - LED indicators for the current mode
